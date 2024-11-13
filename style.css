@@ -1,0 +1,91 @@
+/* Основные стили для сайта */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст для контраста */
+}
+
+header {
+    background-color: #121212; /* Очень тёмный фон для шапки */
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5), 0 0 25px rgba(255, 0, 0, 0.7); /* Токсичные неоновые тени */
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #00ff00; /* Яркий неоновый цвет для ссылок */
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Токсичный светящийся текст */
+}
+
+header nav ul li a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Ховер с красным токсичным эффектом */
+}
+
+main {
+    padding: 30px;
+    background-color: #222; /* Тёмный фон для основного контента */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Токсичный светящийся эффект */
+}
+
+section {
+    margin-bottom: 25px;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.7); /* Красные токсичные тени */
+}
+
+footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5); /* Токсичные тени на футере */
+}
+
+footer p {
+    font-size: 14px;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Токсичные тени на футере */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 80px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
